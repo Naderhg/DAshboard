@@ -160,7 +160,7 @@ ul{
     height: 3px;
     position: absolute;
     bottom: -10px;
-    left 0
+    left: 0;
 }
 .page h1::before{
     background-color: white;
@@ -318,3 +318,18 @@ ul{
 
 }
 /* End  Yearly Target*/
+/* Start Ticket */
+.tickets .box{
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+}
+@media(max-width: 767px){
+.tickets .box{
+    width: 100%;
+}
+
+}
+
+
+
+/* Start Ticket */
