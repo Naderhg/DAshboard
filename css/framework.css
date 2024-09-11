@@ -11,7 +11,7 @@
 .d-flex{
     display: flex;
 }
-.d-wrap{
+.f-wrap{
     flex-wrap: wrap;
 }
 .align-center{
