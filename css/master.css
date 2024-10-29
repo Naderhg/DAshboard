@@ -331,7 +331,7 @@ ul{
 }
 /* End Ticket */
 /*Start Latest News*/
-.latest-news .news-row:not(last-of-type){
+.latest-news .news-row:not(:last-of-type){
 margin-bottom: 20px;
 padding-bottom: 20px;
 border-bottom: 1px solid #eee;
@@ -342,10 +342,86 @@ border-bottom: 1px solid #eee;
     margin-right: 15px;
 
 }
-.latest-news .info{
-
-}
-
-
 /*End Latest News*/
+/*Start Task*/
+.tasks .task-row:not(:last-of-type){
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.tasks .info{
+    flex-grow:1;
+}
+.tasks .done{
+    opacity: 0.3;
+    text-decoration: line-through;
+}
+.tasks .delete{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tasks .delete:hover{
+    color: var(--red-color);
+}
+/*End Task*/
 
+/* Start Top Search */
+.search .info:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+/* End Top Search */
+
+/* Start latset-up */
+.latest-up ul li{
+    border-bottom: 1px solid #eee;
+}
+.latest-up ul li img{
+    width: 40px;
+    height: 40px;
+}
+/* End latset-up */
+/* Start Last Project */
+.last-project ul::before{
+    content: "";
+    position: absolute;
+    left: 11px;
+    background-color: var(--blue-color);
+    height: 100%;
+    width: 2px;
+}
+.last-project ul li::before{
+    content: "";
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: white;
+    outline: 2px solid var(--blue-color);
+    margin-right: 10px;
+    width: 25px;
+    height: 26px;
+    display: block;
+    z-index: 1;    
+}
+.last-project ul li.done::before{
+    background-color: var(--blue-color);
+}
+.last-project ul li.Current::before{
+    animation: change-color 0.8s infinite alternate;
+}
+.last-project .Launch-icon{
+    position: absolute;
+    width: 150px;
+    right: 0;
+    bottom: 0;
+    opacity: 25%;
+}
+/* End Last Project */
+/* Start animation */
+@keyframes change-color{
+    from{
+        background-color: var(--blue-color);
+    }
+    to {
+        background-color: white;
+    }
+}
+/* End animation */
