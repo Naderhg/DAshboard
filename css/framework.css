@@ -4,7 +4,7 @@
     --orange-color: #f59e0b;
     --green-color: #22c55e;
     --red-color: #f44336;
-    --gray-color: #888;
+    --grey-color: #888;
 }
 
 /* start Box*/
@@ -53,6 +53,12 @@
 .p-20 {
     padding: 20px;
 }
+.pb-10{
+    padding-bottom: 10px;
+}
+.m-0{
+    margin: 0px;
+}
 .m-20{
     margin: 20px;
 }
@@ -62,17 +68,23 @@
 .mt-5{
     margin-top: 5px;
 }
-.mt{
+.mt-10{
     margin-top: 10px;
 }
 .mt-20{
     margin-top: 20px;
 }
-.mb-20{
-    margin-bottom: 20px;
+.mr-10{
+    margin-right: 10px;
+}
+.mb-5{
+    margin-bottom: 5px;
 }
 .mb-10{
-    margin-bottom: mar10px;
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
 }
 /* End padding + margin*/
 
@@ -96,8 +108,8 @@
 .c-black{
     color: black;
 }
-.c-gray{
-    color: var(--gray-color);
+.c-grey{
+    color: var(--grey-color);
 }
 .c-white{
     color: white;
@@ -124,8 +136,14 @@
 .fw-bold{
     font-weight: bold;
 }
+.fs-13{
+    font-size: 13px;
+}
 .fs-14{
     font-size: 14px;
+}
+.fs-15{
+    font-size: 15px;
 }
 .txt-c{
     text-align: center;
